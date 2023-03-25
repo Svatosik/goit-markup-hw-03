@@ -13,14 +13,15 @@ h4,
 h5,
 h6,
 p,
-ul,li {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 :root {
   --primary-brand: #4d5ae5;
@@ -42,7 +43,7 @@ body {
   background: var(--white-background);
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -58,12 +59,12 @@ body {
   text-decoration: none;
 }
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #E7E9FC;
 }
 .header-nav {
   display: flex;
@@ -72,8 +73,6 @@ body {
 .header-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-item {
 }
@@ -99,11 +98,8 @@ body {
   color: var(--primary-brand);
   margin-right: 76px;
 }
-.header-list {
-  display: flex;
-  justify-content: space-around;
-}
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -114,6 +110,8 @@ body {
   /* NAVY BLUE */
 
   color: var(--dark);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-link:hover {
   color: var(--pressed-state);
@@ -176,7 +174,7 @@ body {
 .footer {
   background: var(--dark);
   padding-top: 100px;
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -186,12 +184,11 @@ body {
   line-height: 1.17;
   /* identical to box height, or 117% */
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--primary-brand);
+  
 }
 .logo-down {
   color: var(--light);
@@ -208,11 +205,12 @@ body {
 
   color: var(--light);
   max-width: 264px;
+  margin-top: 17.5px;
 }
 .hero {
   background: var(--dark);
-    padding-top: 188px;
-    padding-bottom: 188px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-weight: 700;
@@ -227,6 +225,8 @@ body {
 
   color: var(--white-background);
   margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -264,7 +264,7 @@ body {
 .advantage-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 24px;
 }
 .advantage-item {
   width: 264px;
@@ -337,11 +337,13 @@ body {
 }
 .team-item {
   background-color: var(--white-background);
-  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-text{
-      padding-top: 32px;
-    padding-bottom: 32px;
+.team-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .member {
   font-weight: 500;
@@ -355,6 +357,7 @@ body {
   /* NAVY BLUE */
 
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .position {
   font-weight: 400;
@@ -417,12 +420,10 @@ body {
 .example-linklist {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .linklist-item {
   width: calc((100% - 48px) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
-  border: 1px solid #E7E9FC;
 }
 .linklist-item:nth-child(3n) {
   margin-right: 0;
@@ -433,12 +434,12 @@ body {
 }
 .linklist-link {
 }
-.linklist-card{
+.linklist-card {
   padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    border: 1px solid #E7E9FC;
-    border-top: none;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .linklist-title {
   font-weight: 500;
