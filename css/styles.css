@@ -125,6 +125,7 @@ body {
   font-style: normal;
 }
 .header-adr {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -136,6 +137,8 @@ body {
   /* SLATE */
 
   color: var(--text);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-adr:focus {
   color: var(--pressed-state);
@@ -225,9 +228,10 @@ body {
   /* WHITE */
 
   color: var(--white-background);
-  margin-bottom: 48px;
   max-width: 496px;
   margin: 0 auto;
+  margin-bottom: 48px;
+
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -374,6 +378,7 @@ body {
   color: var(--text);
 }
 .examples {
+  padding-top: 96px;
 }
 .examples-list {
   display: flex;
